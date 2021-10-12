@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.city-block{
+    width: calc(100% - 20px);
+    height: calc(100vh - 20px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    position: relative;
+}
+
+#roma{
+    background-image: url(https://www.cosafarearoma.it/wp-content/uploads/2015/12/Colosseo_Roma.jpg);  
+}
+
+#napoli{
+    background-image: url(https://siviaggia.it/wp-content/uploads/sites/2/2020/08/innamorarsi-napoli.jpg);
+}
+
+#milano{
+    background-image: url(https://media.istockphoto.com/photos/milan-cathedral-italy-picture-id493223692?k=20&m=493223692&s=612x612&w=0&h=5L8i-QimFtHjFk03AQ6u1zgQqmKijocCJwAVA6Wz7qY=);
+}
+
+.city-block::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.city-name{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
